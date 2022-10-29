@@ -3,8 +3,8 @@ package com.example;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.dao.UserDao;
-import com.example.domain.User;
+import com.example.mapper.UserMapper;
+import com.example.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ import java.util.List;
 @SpringBootTest
 class OrderserviceApplicationTests {
 	@Autowired
-	private UserDao userDao;
+	private UserMapper userDao;
 
 	@Test
 	void  testInsert(){

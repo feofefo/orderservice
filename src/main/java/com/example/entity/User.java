@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
